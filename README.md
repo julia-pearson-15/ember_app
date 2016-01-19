@@ -10,7 +10,8 @@
 - $ npm install -g ember-cli
 - $ ember new super-app
 - This creates a full file structure
-- All routes are handled in router.js which maps a url to a controller (i.e. **/about** routes to **about.js** which is linked to the view **about.hbs**)
+- All routes are handled in router.js which maps a url to a controller
+- i.e. **/about** routes to **about.js** which is linked to the view **about.hbs**
 
 ## Running Server 
 - $ ember s
