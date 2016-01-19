@@ -1,22 +1,31 @@
 import Ember from 'ember';
-  var $ = Ember.$;
-
-  var hamsters = [{
+var $ = Ember.$;
+var hamsters = [
+  {
     name: 'Reginald',
     color: 'Orange',
     size: 'Average',
     fluff: 4
-  },{
+  },
+  {
     name: 'Jodie',
     color: 'White',
     size: 'Petite',
     fluff: 7
-  },{
+  },
+  {
     name: 'Benni-furrrrrr',
     color: 'Black',
     size: 'Chubby',
     fluff: 10
-  }];
+  }
+];
+var returnOfTheHamsters = [];
+returnOfTheHamsters = hamsters;
+console.log('1');
+
+
+$( document ).ready(function() {
 
   var $button = $('button');
 
@@ -26,6 +35,7 @@ import Ember from 'ember';
     var color = $('input').eq(1).val();
     var size = $('select').val();
     var fluffNum = $('input').eq(2).val();
+    console.log('click');
     if (!!name.length && !!color.length && !!fluffNum.length){
       var newHamster = {
         name: name,
@@ -38,11 +48,7 @@ import Ember from 'ember';
     }
   });
 
-  var returnOfTheHamsters = [];
-  returnOfTheHamsters = hamsters;
-  // returnOfTheHamsters.sort(function(a, b) {
-  //   return a.name.localeCompare(b.name)
-  // });
+
 
   var $name = $('#name');
   var $color = $('#color');
@@ -73,9 +79,14 @@ import Ember from 'ember';
       return a.fluff.localeCompare(b.fluff);
     });
   });
+  console.log('2');
+
+});
+
 
 export default Ember.Route.extend({
   model() {
+    console.log('3');
     return returnOfTheHamsters;
   },
 });
