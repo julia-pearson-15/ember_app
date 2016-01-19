@@ -9,8 +9,12 @@
 ## Set up  
 - $ npm install -g ember-cli
 - $ ember new super-app
+- This creates a full file structure
 
 ## Running Server 
 - $ ember server
+- This runs our basic page, which is currently programed to say a basic welcome message
 
 ## Adding Functionality
+- $ ember g route index
+- This creates an route to the index page (via the root) that is automatically linked to the index.js file. 
