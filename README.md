@@ -1,53 +1,22 @@
-# Super-app
+# Ember_Tutorial
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+**Ember.js** is a JavaScript framework, based on the MVC pattern. 
+- It allows users to create single page web applications by using common indioms and best practices.
+- Popular sites and applications that use ember.js: Groupon, Vine, Live Nation, Chipotle, Nordstrom, Apple Music
 
-## Prerequisites
+#Steps to follow
 
-You will need the following things properly installed on your computer.
+## Set up  
+- $ npm install -g ember-cli
+- $ ember new super-app
+- This creates a full file structure
+- All routes are handled in router.js which maps a url to a controller
+- i.e. **/about** routes to **about.js** which is linked to the view **about.hbs**
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## Running Server 
+- $ ember s
+- This runs our basic page, which is currently programed to say a basic welcome message
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+## Adding Functionality
+- $ ember g route index
+- This creates an route to the index page (via the root) that is automatically linked to the index.js file. 
