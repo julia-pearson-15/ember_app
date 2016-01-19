@@ -15,6 +15,18 @@
     {{content-for 'head-footer'}}
   </head>
   <body>
+    <form>
+      <input type="text" name="hamster-name" placeholder="Hamster Name"><br>
+      <input type="text" name="hamster-color" placeholder="Hamster Color"><br>
+      <select name="hamster-size">
+        <option value="Petite">Petite</option>
+        <option value="Average">Average</option>
+        <option value="Chubby">Chubby</option>
+      </select><br>
+      <input type="number" name="hamster-fluff" placeholder="Hamster Fluffiness"><br>
+      <button>New Hamster</button>
+    </form>
+
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
