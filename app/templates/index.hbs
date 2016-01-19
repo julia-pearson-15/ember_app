@@ -11,11 +11,13 @@
         <th class="headers" id="fluff">Fluff</th>
       </tr>
     </thead>
-    <tbody>
-      {{#each model as |hamsterUnit|}}
-          {{index-hamster hamster=hamsterUnit}}
-      {{/each}}
-    </tbody>
+    <script type="text/x-handlebars" id="sort">
+      <tbody>
+        {{#each model as |hamsterUnit|}}
+            {{index-hamster hamster=hamsterUnit}}
+        {{/each}}
+      </tbody>
+    </script>
   </table>
 
 
