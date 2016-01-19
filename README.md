@@ -5,9 +5,12 @@
 - Popular sites and applications that use ember.js: Groupon, Vine, Live Nation, Chipotle, Nordstrom, Apple Music
 
 #Steps to follow
-##**Set up**  
+
+## Set up  
 - $ npm install -g ember-cli
 - $ ember new super-app
-##**Running Server** 
+
+## Running Server 
 - $ ember server
-Adding Functionality
+
+## Adding Functionality
