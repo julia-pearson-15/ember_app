@@ -27,14 +27,17 @@ import Ember from 'ember';
     var size = $('select').val();
     var fluffNum = $('input').eq(2).val();
     if (!!name.length && !!color.length && !!fluffNum.length){
-      var newHamster = {
-        name: name,
-        color: color,
-        size: size,
-        fluff: fluffNum
-      };
+      var newHamster = [name,color,size,fluffNum];
       hamsters.push(newHamster);
       console.log(hamsters);
+      var $div = $('<div>').attr('class','ember-view')
+      var $row = $('<tr>')
+      newHamster.forEach(function(property){
+        var $entry = $('<td>').attr('class','column').text(property)
+        $row.append($entry)
+      })
+      $div.append($row)
+      $('tbody').append($div)
     }
   });
 
