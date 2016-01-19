@@ -1,0 +1,8 @@
+.row{
+  float: left;
+  padding: 10px;
+}
+.column{
+  position: relative;
+  left: 0px;
+}

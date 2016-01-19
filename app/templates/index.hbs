@@ -2,6 +2,22 @@
 
 We hope you find exactly what you're looking for in a hamster to adopt.
 
-{{#each model as |hamsterUnit|}}
-  {{index-hamster hamster=hamsterUnit}}
-{{/each}}
+
+
+  <table >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Fluff</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |hamsterUnit|}}
+          {{index-hamster hamster=hamsterUnit}}
+      {{/each}}
+    </tbody>
+  </table>
+
+

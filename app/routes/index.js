@@ -35,7 +35,7 @@ import Ember from 'ember';
       hamsters.push(newHamster)
       console.log(hamsters)
     }
-  })
+  });
 
 export default Ember.Route.extend({
   model() {
